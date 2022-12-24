@@ -17,12 +17,14 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-// import { CartComponent } from './components/cart/cart.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsHeaderComponent } from './pages/components/products-header/products-header.component';
+import { FiltersComponent } from './pages/components/filters/filters.component';
+import { ProductCardComponent } from './pages/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,9 @@ import { ProductsHeaderComponent } from './pages/components/products-header/prod
     PagesComponent,
     HomeComponent,
     ProductsHeaderComponent,
+    FiltersComponent,
+    ProductCardComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
