@@ -25,6 +25,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsHeaderComponent } from './pages/components/products-header/products-header.component';
 import { FiltersComponent } from './pages/components/filters/filters.component';
 import { ProductCardComponent } from './pages/product-card/product-card.component';
+import { CartService } from './services/cart.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { ProductCardComponent } from './pages/product-card/product-card.componen
     BrowserAnimationsModule,
     RouterModule.forRoot([]),
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
