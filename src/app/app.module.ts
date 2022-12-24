@@ -16,16 +16,25 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { CartComponent } from './components/cart/cart.component';
+import { AppRoutingModule } from './app-routing.module';
+// import { CartComponent } from './components/cart/cart.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ProductsHeaderComponent } from './pages/components/products-header/products-header.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, PagesComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    PagesComponent,
+    HomeComponent,
+    ProductsHeaderComponent,
+  ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     MatSidenavModule,
     MatGridListModule,
     MatMenuModule,
