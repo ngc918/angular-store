@@ -23,13 +23,7 @@ import { PagesComponent } from './pages/pages.component';
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CartComponent,
-    HeaderComponent,
-    PagesComponent,
-    HomeComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, PagesComponent, HomeComponent],
   imports: [
     BrowserModule,
     MatSidenavModule,
