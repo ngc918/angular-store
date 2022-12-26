@@ -28,6 +28,9 @@ import { ProductCardComponent } from './pages/product-card/product-card.componen
 import { CartService } from './services/cart.service';
 import { StoreService } from './services/store.service';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
     FiltersComponent,
     ProductCardComponent,
     CartComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +63,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     RouterModule.forRoot([]),
     HttpClientModule,
+    MatFormFieldModule,
   ],
   providers: [CartService, StoreService],
   bootstrap: [AppComponent],
