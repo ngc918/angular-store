@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   getProducts() {
-    this.storeService
+    this.productsSubscription = this.storeService
       .getAllProducts(this.count, this.sort, this.category)
       .subscribe((_prodcuts) => {
         this.products = _prodcuts;
